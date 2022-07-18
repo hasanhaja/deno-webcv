@@ -1,13 +1,17 @@
 /** @jsx h */
-import { h, FunctionComponent } from "preact";
+import { ComponentChildren, h } from "preact";
 import { tw } from "@twind";
 
-const Content: FunctionComponent<null> = ({ children }) => {
-    return (
-        <div class={tw`bg-gray-200 rounded-md p-10 mb-2`}>
-            {children}
-        </div>
-    );
-}
+type ContentProps = {
+  children: ComponentChildren;
+};
+
+const Content = ({ children }: ContentProps) => {
+  return (
+    <div class={tw`bg-gray-200 rounded-md p-10 mb-2`}>
+      {children}
+    </div>
+  );
+};
 
 export default Content;
