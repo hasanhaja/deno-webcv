@@ -1,16 +1,16 @@
 /** @jsx h */
 import { h } from "preact";
-import Counter from "../islands/Counter.tsx";
-import PageWrapper from "../components/PageWrapper.tsx";
+import BaseLayout from "../components/BaseLayout.tsx";
 import Content from "../components/Content.tsx";
+import WeatherSearch from "../islands/WeatherSearch.tsx";
 
-export default function Home() {
+const Home = () => {
   return (
-    <PageWrapper>
-      <Content>
-        Let's count!
-      </Content>
-      <Counter start={3} />
-    </PageWrapper>
+    <BaseLayout title="@hasanhaja">
+      <Content>What's the weather like in London 🇬🇧? 🤔</Content>
+      <WeatherSearch />
+    </BaseLayout>
   );
-}
+};
+
+export default Home;
