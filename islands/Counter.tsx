@@ -15,15 +15,15 @@ const Counter = (props: CounterProps) => {
   return (
     <div class={tw`flex gap-2 w-full`}>
       <button
-        className={btn("red")}
+        class={btn("red")}
         onClick={() => setCount(count - 1)}
         disabled={!IS_BROWSER}
       >
         -
       </button>
-      <p className={tw`flex-grow-1 font-bold text-xl`}>{count}</p>
+      <p class={tw`flex-grow-1 font-bold text-xl`}>{count}</p>
       <button
-        className={btn("green")}
+        class={btn("green")}
         onClick={() => setCount(count + 1)}
         disabled={!IS_BROWSER}
       >

@@ -10,7 +10,7 @@ export default function NotFoundPage({ url }: UnknownPageProps) {
     <BaseLayout title="404 Page not found">
       <Content>
         <p>
-          <span class={tw`font-bold`}>404 not found:</span>
+          <span class={tw`font-bold`}>404 not found:{" "}</span>
           {url.pathname}
         </p>
       </Content>
