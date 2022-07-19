@@ -3,17 +3,18 @@ import { ComponentChildren, h } from "preact";
 import { Head } from "$fresh/runtime.ts";
 import { tw } from "@twind";
 import Header from "./Header.tsx";
+import Footer from "./Footer.tsx";
 
 type BaseLayoutProps = {
-  title: string;
+  title?: string;
   children: ComponentChildren;
 };
 
 const BaseLayout = ({ title, children }: BaseLayoutProps) => {
   return (
-    <div class={tw`p-4 mx-auto max-w-screen-md`}>
+    <div class={tw`p-4 mx-auto max-w-screen-xl`}>
       <Head>
-        <title>{title}</title>
+        <title>@hasanhaja{title ? ` | ${title}` : null}</title>
         <link rel="stylesheet" href="index.css" />
         <meta
           name="description"
@@ -39,7 +40,8 @@ const BaseLayout = ({ title, children }: BaseLayoutProps) => {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <Header />
-      {children}
+      <main>{children}</main>
+      <Footer />
     </div>
   );
 };

@@ -8,9 +8,11 @@ import * as $2 from "./routes/api/joke.ts";
 import * as $3 from "./routes/api/weather.ts";
 import * as $4 from "./routes/count.tsx";
 import * as $5 from "./routes/index.tsx";
+import * as $6 from "./routes/weather.tsx";
 import * as $$0 from "./islands/Counter.tsx";
-import * as $$1 from "./islands/Searcher.tsx";
-import * as $$2 from "./islands/WeatherSearch.tsx";
+import * as $$1 from "./islands/NavBar.tsx";
+import * as $$2 from "./islands/Searcher.tsx";
+import * as $$3 from "./islands/WeatherSearch.tsx";
 
 const manifest = {
   routes: {
@@ -20,11 +22,13 @@ const manifest = {
     "./routes/api/weather.ts": $3,
     "./routes/count.tsx": $4,
     "./routes/index.tsx": $5,
+    "./routes/weather.tsx": $6,
   },
   islands: {
     "./islands/Counter.tsx": $$0,
-    "./islands/Searcher.tsx": $$1,
-    "./islands/WeatherSearch.tsx": $$2,
+    "./islands/NavBar.tsx": $$1,
+    "./islands/Searcher.tsx": $$2,
+    "./islands/WeatherSearch.tsx": $$3,
   },
   baseUrl: import.meta.url,
 };

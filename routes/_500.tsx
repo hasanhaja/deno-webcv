@@ -10,7 +10,7 @@ export default function Error500Page({ error }: ErrorPageProps) {
     <BaseLayout title="500 Internal Error">
       <Content>
         <p>
-          <span class={tw`font-bold`}>500 internal error:</span>
+          <span class={tw`font-bold`}>500 internal error:{" "}</span>
           {(error as Error).message}
         </p>
       </Content>
