@@ -18,7 +18,7 @@ const Header = () => {
           class={tw
             `text-3xl my-auto mx-0 content-center md:text-4xl xl:text-5xl`}
         >
-          @hasanhaja
+          <a href="/">@hasanhaja</a>
         </h1>
       </div>
       <NavBar />
