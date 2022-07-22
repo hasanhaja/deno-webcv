@@ -1,5 +1,6 @@
 /** @jsx h */
 import { h } from "preact";
+import { tw } from "@twind";
 import Searcher from "./Searcher.tsx";
 import { useState } from "preact/hooks";
 import { WeatherData, WeatherDataType } from "../schema/WeatherData.ts";
@@ -48,7 +49,7 @@ const WeatherSearch = () => {
           setData(resp);
         }}
       />
-      {submitting ? <p>Submitting...</p> : null}
+      {submitting ? <p class={tw`text-lg italic`}>Submitting...</p> : null}
       {data ? <WeatherCard data={data} /> : null}
     </div>
   );

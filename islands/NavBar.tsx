@@ -50,6 +50,7 @@ const NavBar = () => {
           <NavLink href="/">Home</NavLink>
           <NavLink href="/weather">Weather</NavLink>
           <NavLink href="/count">Counter</NavLink>
+          <NavLink href="/picks">Picks</NavLink>
         </ul>
       </nav>
     </Fragment>

@@ -14,6 +14,16 @@ export default function NotFoundPage({ url }: UnknownPageProps) {
           {url.pathname}
         </p>
       </Content>
+      <div class={tw`mb-2 text-center`}>
+        <img
+          src="/404_temp.png"
+          class={tw`rounded-md mx-auto w-9/12`}
+          alt="Website under construction image with crane next a laptop with orange cones."
+        />
+        <p class={tw`text-xl`}>
+          Sorry, I'm still slowly building all of these pages! 🏗
+        </p>
+      </div>
     </BaseLayout>
   );
 }

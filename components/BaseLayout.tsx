@@ -1,5 +1,5 @@
 /** @jsx h */
-import { ComponentChildren, h } from "preact";
+import { ComponentChildren, Fragment, h } from "preact";
 import { Head } from "$fresh/runtime.ts";
 import { tw } from "@twind";
 import Header from "./Header.tsx";
@@ -12,7 +12,7 @@ type BaseLayoutProps = {
 
 const BaseLayout = ({ title, children }: BaseLayoutProps) => {
   return (
-    <div class={tw`p-4 mx-auto max-w-screen-xl`}>
+    <Fragment>
       <Head>
         <title>@hasanhaja{title ? ` | ${title}` : null}</title>
         <link rel="stylesheet" href="index.css" />
@@ -39,10 +39,16 @@ const BaseLayout = ({ title, children }: BaseLayoutProps) => {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </div>
+      <div class={tw`flex flex-col min-h-screen`}>
+        <Header />
+        <main>
+          <div class={tw`p-4 mx-auto max-w-screen-xl`}>
+            {children}
+          </div>
+        </main>
+        <Footer />
+      </div>
+    </Fragment>
   );
 };
 

@@ -10,7 +10,9 @@ type WeatherCardProps = {
 const WeatherCard = ({ data }: WeatherCardProps) => {
   return (
     <div class={tw`bg-blue-200 rounded-md p-10 mb-2`}>
-      <h1 class={tw`text-2xl p-1 font-medium`}>{data.city.name}</h1>
+      <h1 class={tw`text-2xl p-1 font-medium`}>
+        {data.city.name}, {data.city.country}
+      </h1>
       <div class={tw`flex gap-1`}>
         <h1 class={tw`text-4xl font-bold text-right pt-3 flex-grow-1`}>
           {data.list[0].main.temp} &#176;C
