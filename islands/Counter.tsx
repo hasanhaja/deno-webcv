@@ -13,7 +13,7 @@ const Counter = (props: CounterProps) => {
   const btn = (bgColor: string) =>
     tw`bg-${bgColor}-500 flex-grow-1 px-2 py-1 border(gray-100 1) hover:bg-${bgColor}-600 rounded-md font-bold text-2xl hover:text-gray-200`;
   return (
-    <div class={tw`flex gap-2 w-full`}>
+    <div class={tw`flex gap-2 w-full text-center`}>
       <button
         class={btn("red")}
         onClick={() => setCount(count - 1)}

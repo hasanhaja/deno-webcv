@@ -8,7 +8,7 @@ import NavBar from "../islands/NavBar.tsx";
 const Header = () => {
   return (
     <header>
-      <div class={tw`p-4 mx-auto max-w-screen-xl md:flex md:justify-between`}>
+      <div class={tw`px-4 pt-4 mx-auto max-w-screen-xl md:flex md:justify-between`}>
         <div class={tw`flex gap-2`}>
           <img
             class={tw`w-20 flex-shrink object-contain`}
