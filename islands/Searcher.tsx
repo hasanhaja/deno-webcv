@@ -29,7 +29,7 @@ const Searcher = ({ handleSubmit }: SearcherProps) => {
           type="text"
           id="city"
           name="city"
-          placeholder="Search"
+          placeholder="Search (e.g. Dubai)"
           value={formData}
           onFocus={(e) => setError(false)}
           onChange={(e) => {
