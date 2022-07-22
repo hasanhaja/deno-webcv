@@ -62,37 +62,44 @@ const Home = () => {
             Fresh
           </a>.
         </p>
-        <Content>
-          <div class={tw`flex gap-8 justify-center`}>
-            <p
-              class={tw
-                `rounded-md text-3xl p-3 bg-gray-900 text-gray-200 my-auto`}
+        <div className={tw`mt-2 bg-gray-200 rounded-md mb-2 max-w-lg mx-auto`}>
+          <div className={tw`flex`}>
+            <div className={tw`bg-gray-900 rounded-l-md`}>
+              <p
+                className={tw
+                  `text-3xl font-bold text-gray-200 p-5 sm:p-7 sm:text-4xl`}
+              >
+                Social
+              </p>
+            </div>
+            <div
+              className={tw
+                `flex gap-2 justify-between px-[8%] sm:px-0 sm:gap-10 sm:justify-center items-center w-full`}
             >
-              Social
-            </p>
-            <a href="https://twitter.com/hasanhaja">
-              <img
-                class={tw`w-14 min-w-10`}
-                src="/twitter.png"
-                alt="Blue Twitter bird logo"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/hasanhaja/">
-              <img
-                class={tw`w-14`}
-                src="/linkedin.png"
-                alt="Blue LinkedIn logo"
-              />
-            </a>
-            <a href="https://github.com/hasanhaja">
-              <img
-                class={tw`w-14`}
-                src="/github.png"
-                alt="Black GitHub logo"
-              />
-            </a>
+              <a href="https://twitter.com/hasanhaja">
+                <img
+                  className={tw`w-14`}
+                  src="/twitter.png"
+                  alt="Blue Twitter bird logo"
+                />
+              </a>
+              <a href="https://www.linkedin.com/in/hasanhaja/">
+                <img
+                  className={tw`w-14`}
+                  src="/linkedin.png"
+                  alt="Blue LinkedIn logo"
+                />
+              </a>
+              <a href="https://github.com/hasanhaja">
+                <img
+                  className={tw`w-14`}
+                  src="/github.png"
+                  alt="Black GitHub logo"
+                />
+              </a>
+            </div>
           </div>
-        </Content>
+        </div>
       </section>
 
       <Content>
