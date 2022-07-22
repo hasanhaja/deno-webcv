@@ -37,7 +37,7 @@ const NavBar = () => {
       </button>
       <nav
         class={tw
-          `md:flex md:items-center md:justify-between mb-2 bg-green-300 rounded-md md:bg-transparent`}
+          `md:flex md:items-center md:justify-between md:mb-2 bg-green-300 rounded-md md:bg-transparent`}
       >
         <ul
           class={tw`md:flex md:items-center md:gap-2 ${
