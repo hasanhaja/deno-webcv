@@ -53,13 +53,13 @@ const Home = () => {
             Next.js
           </a>{" "}
           apps. I love the web and I spend a lot of my time learning and playing
-          with web technologies. My current favorite is{" "}
+          with web technologies. I'm currently playing with{" "}
           <a
             class={tw
               `transition underline hover:text-[#ffdb1e] font-bold hover:font-extrabold`}
             href="https://fresh.deno.dev/"
           >
-            Fresh
+            🍋 Fresh
           </a>.
         </p>
         <div className={tw`mt-2 bg-gray-200 rounded-md mb-2 max-w-lg mx-auto`}>
@@ -101,22 +101,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <Content>
-        <div>
-          <h1>Experience</h1>
-        </div>
-      </Content>
-      <Content>
-        <div>
-          <h1>Skills</h1>
-        </div>
-      </Content>
-      <Content>
-        <div>
-          <h1>Education</h1>
-        </div>
-      </Content>
     </BaseLayout>
   );
 };
